@@ -1,0 +1,31 @@
+A. Basic python data types
+    1. Python data types
+        -String:    "String"        |   str()
+        -Integer:   25              |   int()
+        -Float:     2.05, 1e6       |   float()
+        -Boolean:   True, False     |   bool()
+        -Tuple:     (5, True)       |   tuple()
+        -List:      ['item', 1]     |   list()
+        -Set:       {"R1", "A1"}    |   set()   
+        -Dictionary {key:value}     |   dict()
+
+    2. Python methods
+
+    3. Navigating complex data structure
+
+B. Read/Write JSON
+    1. JSON data types
+    2. With open method
+
+C. Netmiko
+    1. ConnectHandler
+    2. Connect
+    3. Write
+    4. Push
+    5. Handling multiple device
+    6. Try, except
+
+B. Nested Loops, Regex
+    1. Input method
+    2. Nested for loops, if elif else
+    3. regex

@@ -1,0 +1,102 @@
+-------------------Script-01--------------------
+"presented-id": [
+    {
+        "ph-national-id": {
+            "id-number": "3005-8025-8984-0013",
+            "serial-number": "456D847623",
+            "date-of-issue": {
+                "month": "September",
+                "day": 16
+                "year": 2016
+            }
+            "date-of-expire": Null
+        }
+    }, 
+]
+-------------------
+
+-------------------Script-02--------------------
+{
+    'first-name': ["Bryan", "Lee"],
+    'middle-name': "Huffman",
+    'last-name': "Archer",
+    'name-suffix': "Jr.",
+    'age': 32,
+    'is-vaccinated': true,
+    'date-of-birth': {
+        'month': "January",
+        'day': 20,
+        'year': 1925
+    }
+}
+-------------------
+
+-------------------Script-03--------------------
+{
+    "first-name": ["Bryan", "Lee"],
+    "middle-name": "Huffman",
+    "last-name": "Archer",
+    "name-suffix": "Jr.",
+    "age": 32,
+    "is-vaccinated": true,
+    "date-of-birth": {
+        "month": "January",
+        "day": 20,
+        "year": 1925
+    },
+    "presented-id": (
+        {
+            "ph-national-id": {
+                "id-number": "3005-8025-8984-0013",
+                "serial-number": "456D847623",
+                "date-of-issue": {
+                    "month": "September",
+                    "day": 16,
+                    "year": 2016
+                },
+                "date-of-expire": null
+            }
+        }, 
+        {
+            "driver-license": {
+                "id-number": "N45-67-000024",
+                "serial-number": "222333567",
+                "date-of-issue": {
+                    "month": "February",
+                    "day": 28,
+                    "year": 2016
+                },
+                "date-of-expire": {
+                    "month": "February",
+                    "day": 28,
+                    "year": 2021
+                }
+            }
+        }
+    )
+}
+-------------------
+
+
+
+
+
+
+-------------------Answers--
+Script-01
+    error:
+        date-of-expire value is uppercase Null
+    
+    solution:
+        null must be lowercase
+
+Script-02
+    error:
+        keys are using single quotes
+    
+    solution:
+        keys must use double quotes
+
+Script-03
+    error:
+        presented-id is using a tuple (), which is not a valid JSON data type

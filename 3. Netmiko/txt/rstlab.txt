@@ -1,0 +1,39 @@
+@D1
+ ip dhcp excluded-add 10.2.1.1 10.2.1.100
+ ip dhcp excluded-add 10.2.1.200 10.2.1.254
+ ip dhcp pool ipPoolA
+  network 10.2.1.0 255.255.255.0
+  default-router 10.2.1.254
+  exit
+
+@D2
+ ip dhcp excluded-add 10.2.1.1 10.2.1.199
+ ip dhcp excluded-add 10.2.1.250 10.2.1.254
+ ip dhcp pool ipPoolB
+  network 10.2.1.0 255.255.255.0
+  default-router 10.2.1.254
+  exit
+
+@A1
+ int e0/0
+  sw mo ac
+  sw ac vlan 10
+  exit
+
+@A2
+ int e1/0
+  sw mo ac
+  sw ac vlan 10
+  exit
+
+@P1
+ int e0/0
+  no shut
+  ip add dhcp
+  exit
+
+@P2
+ int e1/0
+  no shut
+  ip add dhcp
+  exit

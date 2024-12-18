@@ -1,0 +1,10 @@
+For class discussion
+__
+VScode: File > Preferences > Settings
+    Search:
+    -Text Editor Font Size
+    -Terminal Font Size
+    -MouseWheel Zoom
+__
+Open terminal on a new Window
+    -Left/Right click Terminal > Send to New Window

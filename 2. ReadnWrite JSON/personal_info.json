@@ -1,0 +1,45 @@
+{
+    "first-name": ["Bryan", "Lee"],
+    "middle-name": "Huffman",
+    "last-name": "Archer",
+    "name-suffix": "Jr.",
+    "age": 32,
+    "is-vaccinated": true,
+    "date-of-birth": {
+        "month": "January",
+        "day": 20,
+        "year": 1925
+    },
+    "presented-id": [
+        {
+            "ph-national-id": {
+                "type": "Philippine National ID",
+                "id-number": "3005-8025-8984-0013",
+                "serial-number": "456D847623",
+                "date-of-issue": {
+                    "month": "September",
+                    "day": 16,
+                    "year": 2016
+                },
+                "date-of-expire": null
+            }
+        }, 
+        {
+            "driver-license": {
+                "type": "Driver's License",
+                "id-number": "N45-67-000024",
+                "serial-number": "222333567",
+                "date-of-issue": {
+                    "month": "February",
+                    "day": 28,
+                    "year": 2016
+                },
+                "date-of-expire": {
+                    "month": "June",
+                    "day": 28,
+                    "year": 2021
+                }
+            }
+        }
+    ]
+}

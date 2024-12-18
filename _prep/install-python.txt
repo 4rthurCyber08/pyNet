@@ -1,0 +1,40 @@
+__
+Install & Update
+1. Download and Install Python
+    https://www.python.org/downloads/
+
+2. Run powershell with admin privilege
+
+3. Run the commands:
+    py -m pip install --upgrade pip
+    py -m pip install netmiko
+
+__
+Possible Errors for installation
+1. Error:
+    @cmd
+    C:\>python
+
+    'python' is not recognized as an internal or external command,
+    operable program or batch file.
+
+    Solution:
+    Python is not added to the path on environment variables.
+
+    1. (Win + R) Run: sysdm.cpl
+    2. Advanced > Environment Variables
+    3. On either User Variables or System Variables:
+        Path > Edit > New
+        
+        *User - access for only the specific user account
+        *System - accessible for all users
+
+    4. Add the path to both the python excecutable and the scripts folder
+
+        *These are the default locations for the python excecutable. 
+        Will vary depending on how python was installed.
+        
+        C:\Program Files\Python312\
+        C:\Program Files\Python312\Scripts\
+        
+
